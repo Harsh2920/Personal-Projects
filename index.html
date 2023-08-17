@@ -44,5 +44,17 @@
         <p>Don't have a accout?<span>Sign Up</span></p>
       </div>
     </div>
+
+    <script type="text/javascript">
+      function myfunc(event) {
+        event.preventDefault();
+
+        var username = document.getElementById("Username").value;
+        var password = document.getElementById("Password").value;
+
+        localStorage.setItem('ls_username', username);
+        localStorage.setItem('ls_password', password);
+      }
+    </script>
   </body>
 </html>
